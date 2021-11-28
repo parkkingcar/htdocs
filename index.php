@@ -1,4 +1,14 @@
+<!DOCTYPE html>
+<head>
+    <title>Home</title>
+</head>
+<body>
 <?php
 include 'Menu.html';
-echo "ndh";
+
+
 ?>
+
+</body>
+
+</html>
