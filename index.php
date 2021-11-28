@@ -3,11 +3,7 @@
     <title>Home</title>
 </head>
 <body>
-<?php
-include 'Menu.html';
-
-
-?>
+<?php include 'Menu.html';?>
 
 </body>
 
