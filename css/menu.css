@@ -69,7 +69,7 @@ menu박스 가운데정렬, 글자가운데 정렬 */
     height: 50px;
     padding: 0;
     margin: 29px 0 25px 0;
-    dispaly: none;
+    display: none;
 }
 
 .icon{
@@ -85,6 +85,7 @@ menu박스 가운데정렬, 글자가운데 정렬 */
     display: block;
 }
 
+#item2{display: none;}
 
 @media screen and (max-width:700px){
     #small-menu{display: block; float: right;}

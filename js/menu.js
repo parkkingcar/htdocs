@@ -12,7 +12,8 @@ function bigger(){
 
 function small(){
     let menu = document.getElementById("item2")
-    menu.style.display = "block";
+    if(menu.style.display === "block") menu.style.display = "none";
+    else menu.style.display = "block";
 }
 
 
