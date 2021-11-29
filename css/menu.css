@@ -25,24 +25,24 @@ menu박스 가운데정렬, 글자가운데 정렬 */
     text-align: center;
 }
 
-/* 메뉴판 자체를 이동 */
-#menu > ul{
-    float: left;
-    margin-left: 60%;
+#item{
+    float: right;
+    margin-right: 3%;
 }
 
+
 /* menu태그 자식의 ul의 자식 li를 왼쪽정렬과 넓이 140설정 */
-#menu > ul > li {
+#item > ul > li {
     width:140px;
     float: left;
 }
 
-#menu > ul > li > a{
+#item > ul > li > a{
     font-size: 30px;
 }
 
 /*드롭다운 메뉴 감추기 */
-#menu > ul > li > ul{
+#item > ul > li > ul{
     height: 100%;
     background-color: whitesmoke;
     font-size: 100%;
@@ -50,14 +50,50 @@ menu박스 가운데정렬, 글자가운데 정렬 */
 }
 
 /* 드롭다운 부속 사이즈 */
-#menu > ul > li > ul >li{
+#menu > div > ul > li > ul >li{
     line-height: 20px;
     padding-bottom: 10%;
     padding-top: 10%;
 }
 
 /*drop down menu 보이게 하기 */
-#menu > ul > li:hover > ul{
+#menu > div > ul > li:hover > ul{
     display: block;
 }
+
+/*반응형 메뉴바 */
+#small-menu{
+    float: left;
+
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    margin: 29px 0 25px 0;
+    dispaly: none;
+}
+
+.icon{
+    width: 35px;
+    height: 4px;
+    background-color: darkgray;
+    margin: 6px 0;
+    margin-left: 5px;
+    display: none;
+}
+
+#scroll-menu{
+    display: block;
+}
+
+
+@media screen and (max-width:700px){
+    #small-menu{display: block; float: right;}
+    .icon{display: block;}
+    #item{display: none;}
+    #item2{display: none;}
+}
+
+
+
+
 
