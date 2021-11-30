@@ -85,7 +85,21 @@ menu박스 가운데정렬, 글자가운데 정렬 */
     display: block;
 }
 
-#item2{display: none;}
+#item2{
+    display: none;
+    background-color: whitesmoke;
+    border-top: 1px solid black;
+}
+
+#item2 > ul > li{
+    border: 1px solid black;
+}
+
+#intro-drop, #product-drop{display: none;}
+
+#intro-drop > li > a, #product-drop > li > a{
+
+}
 
 @media screen and (max-width:700px){
     #small-menu{display: block; float: right;}

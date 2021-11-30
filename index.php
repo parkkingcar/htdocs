@@ -2,7 +2,7 @@
 <head>
     <title>Home</title>
 </head>
-<body>
+<body style="background-image: url('img/001.png');">
 <?php include 'Menu.html';?>
 
 </body>
