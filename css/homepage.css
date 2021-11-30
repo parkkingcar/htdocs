@@ -1,0 +1,47 @@
+.intro{
+    width: 100%;
+    height: 180px;
+}
+
+#intor-sub{
+    margin-left: 10%;
+    padding-top: 20px;
+
+}
+
+#first-intro{
+    font-size: 20px;
+    color: black;
+    font-weight:normal;
+}
+
+#first-intro #first{
+    font-size: 28px;
+    color: orangered;
+}
+
+#second-intro{
+    font-weight: normal;
+    font-family: Arial;
+    font-size: 50px;
+}
+
+#third-intro{
+    font-size: 20px;
+    color: darkblue;
+
+}
+
+#second{
+    background-color: red;
+    width: 40%;
+    height: 40%;
+    margin-left: 10%;
+}
+
+@media screen and (max-width:700px){
+    #first-intro #first{font-size: 20px;}
+    #first-intro{font-size: 12px;}
+    #second-intro{font-size: 23px;}
+    #third-intro{font-size: 12px;}
+}
