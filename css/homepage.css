@@ -4,7 +4,7 @@
 }
 
 #intor-sub{
-    margin-left: 10%;
+    margin-left: 15%;
     padding-top: 20px;
 
 }
@@ -32,16 +32,124 @@
 
 }
 
-#second{
-    background-color: red;
-    width: 40%;
-    height: 40%;
-    margin-left: 10%;
+.carousel{
+    margin-left: 15%;
+    background-color: whitesmoke;
+    width: 60%;
+    height: 400px;
 }
 
-@media screen and (max-width:700px){
+
+.active > div{
+    float: left;
+    width: 50%;
+    height: 400px;
+}
+
+.active > div > h1{
+    padding-top: 175px;
+    padding-left: 30%;
+}
+
+.scroll{
+    padding-top: 120px;
+    padding-left: 10%;
+}
+
+.scroll > img{
+    width: 200px;
+    height: 200px;
+}
+
+.carousel-control-next-icon{
+    background-color: black;
+}
+
+.carousel-control-prev-icon{
+    background-color: black;
+}
+
+/*문의 전화 베너*/
+.question{
+    margin-top: 40px;
+    margin-bottom: 50px;
+    margin-left: 15%;
+    background-color: whitesmoke;
+    width: 60%;
+    height: 170px;
+}
+
+.question > div{
+    width: 100%;
+    padding-left: 15%;
+}
+
+#question-third > p{margin-bottom: 0;}
+
+@media screen and (max-width:1000px){
+    .intro{height: 130px;}
     #first-intro #first{font-size: 20px;}
     #first-intro{font-size: 12px;}
-    #second-intro{font-size: 23px;}
+    #second-intro{font-size: 19px;}
     #third-intro{font-size: 12px;}
+    #slide{
+        width: 80%;
+        height: 300px;
+    }
+
+    .carousel{
+        width: 80%;
+        height: 300px;
+    }
+
+    .active > div{
+        float: left;
+        height: 250px;
+    }
+
+    .active > div > h1{
+        padding-top: 135px;
+        padding-left: 30%;
+        font-size: 150%;
+    }
+
+    .scroll{
+        padding-top: 100px;
+    }
+
+    .scroll > img{
+        height: 100px;
+        width: 100px;
+    }
+
+    .question{
+        width: 80%;
+        height: 150px;
+        font-size: 80%;
+    }
+
+    #question-second{font-size: 85%;}
+}
+
+@media screen and (max-width:400px){
+    .carousel{
+        width: 80%;
+        height: 250px;
+    }
+
+    .active > div{
+        float: left;
+        height: 250px;
+    }
+
+    .active > div > h1{
+        padding-top: 110px;
+        padding-left: 40%;
+        font-size: 150%;
+    }
+
+    .scroll{
+        padding-top: 80px;
+        padding-left: 1%;
+    }
 }

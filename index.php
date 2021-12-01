@@ -19,9 +19,43 @@
     </div>
 </div>
 
-<div id="second">
+<!--베너 생성-->
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div><h1>생활</h1></div>
+            <div class="scroll">
+                <img src="img/life.png">
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div><h1>식품</h1></div>
+            <div class="scroll">
+                <img src="img/life.png">
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+        </div>
+
+<!--온라인 문의-->
+<div class="question">
+    <div id="question-first"><h2>주문 문의</h2></div>
+    <div id="question-second"><p>궁금하신점이 있으시면 문의주세요! 친절하게 상담해드리겠습니다.</p></div>
+    <div id="question-third"><p>전화: 010-3299-5862</p><a href="#">온라인 문의 ↗</a></div>
 
 </div>
+
+<!--아래-->
+<?php include 'footer.html';?>
+
 
 </body>
 

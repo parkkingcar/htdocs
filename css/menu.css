@@ -100,14 +100,23 @@ menu박스 가운데정렬, 글자가운데 정렬 */
 
 #intro-drop, #product-drop{ display: none;}
 
+#footer-first{
+    width: 100%;
+    height: 80px;
+    background-color: gray;
+    padding-left: 30%;
+}
+
+#footer-first > p{
+    padding-top: 25px;
+}
+
+#footer-second{background-color: darkgray; height: 40px; padding-left: 30%;}
+
 @media screen and (max-width:700px){
     #small-menu{display: block; float: right;}
     .icon{display: block;}
     #item{display: none;}
     #item2{display: none;}
 }
-
-
-
-
 
