@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#footer-first{
+    width: 100%;
+    height: 80px;
+    background-color: gray;
+    padding-left: 15%;
+}
+
+#footer-first > p{
+    padding-top: 25px;
+}
+
+#footer-second{background-color: darkgray; height: 40px; padding-left: 15%;}
+
+@media screen and (max-width:800px){
+    #footer-first{font-size: 90%; height: 60px;}
+    #footer-second{font-size: 70%;}
+}
+
+@media screen and (max-width:700px){
+    #footer-first{font-size: 50%;}
+}
+
