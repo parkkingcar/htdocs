@@ -5,9 +5,12 @@
     <script src="./js/menu.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
 
+<?php class Menu{
+    public function printMenu(){ ?>
 <div id="menu">
     <div id="small-menu">
         <div class="icon"></div>
@@ -52,6 +55,19 @@
         <li style="font-size:120%;"><a href="#">온라인문의</a></li>
     </ul>
 </div>
+    <?php }
+
+    public function printFooter(){ ?>
+<footer>
+    <div id="footer-first">
+        <p>업체명: 00산업|대표자:000|사업자등록|000-00-00000|Fax:000-000-0000|주소:0000000000</p>
+    </div>
+    <div id="footer-second">
+        <p>copyright 2021 00산업|All right Reserved|<a href="#">관리자로그인</a></p>
+    </div>
+</footer>
+    <?php }
+} ?>
 
 
 

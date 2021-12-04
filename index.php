@@ -9,7 +9,13 @@
     <title>Home</title>
 </head>
 <body style="background-image: url('img/001.png');background-repeat: no-repeat;">
-<?php include 'Menu.html';?>
+<?php include 'Menu.php';?>
+
+<?php
+$menu = new Menu();
+$menu->printMenu();
+?>
+
 <!--소개말 -->
 <div class="intro">
     <div id="intor-sub">
@@ -54,9 +60,7 @@
 </div>
 
 <!--아래-->
-<?php include 'footer.html';?>
-
+<?php $menu->printFooter(); ?>
 
 </body>
-
 </html>
