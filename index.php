@@ -37,7 +37,7 @@ $menu->printMenu();
         <div class="carousel-item">
             <div><h1>식품</h1></div>
             <div class="scroll">
-                <img src="img/life.png">
+                <img src="img/food.png">
             </div>
         </div>
     </div>
