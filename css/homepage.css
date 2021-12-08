@@ -28,7 +28,6 @@
 
 #third-intro{
     font-size: 20px;
-    color: darkblue;
 
 }
 
@@ -40,13 +39,13 @@
 }
 
 
-.active > div{
+.carousel-item > div{
     float: left;
     width: 50%;
     height: 400px;
 }
 
-.active > div > h1{
+.carousel-item > div > h1{
     padding-top: 175px;
     padding-left: 30%;
 }
@@ -73,10 +72,10 @@
 .question{
     margin-top: 40px;
     margin-bottom: 50px;
-    margin-left: 15%;
-    background-color: whitesmoke;
+    margin-left: 7%;
     width: 60%;
     height: 170px;
+    font-weight: bold;
 }
 
 .question > div{
@@ -99,15 +98,15 @@
 
     .carousel{
         width: 80%;
-        height: 300px;
+        height: 250px;
     }
 
-    .active > div{
+    .carousel-item > div{
         float: left;
         height: 250px;
     }
 
-    .active > div > h1{
+    .carousel-item > div > h1{
         padding-top: 135px;
         padding-left: 30%;
         font-size: 150%;
@@ -131,18 +130,22 @@
     #question-second{font-size: 85%;}
 }
 
+
+
 @media screen and (max-width:400px){
     .carousel{
         width: 80%;
-        height: 250px;
+        height: 200px;
     }
 
-    .active > div{
+    .carousel-item > div{
         float: left;
-        height: 250px;
+        font-size: 8px;
+        font-weight: bold;
+        height: 200px;
     }
 
-    .active > div > h1{
+    .carousel-item > div > h1{
         padding-top: 110px;
         padding-left: 40%;
         font-size: 150%;

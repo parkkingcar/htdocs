@@ -8,7 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <title>Home</title>
 </head>
-<body style="background-image: url('img/001.png');background-repeat: no-repeat;opacity:30%;">
+<body style="background-image: url('img/001.png');background-repeat: no-repeat;">
 <?php include 'Menu.php';?>
 
 <?php
@@ -21,21 +21,21 @@ $menu->printMenu();
     <div id="intor-sub">
         <h2 id="first-intro"><span id="first">No.01</span> 00산업</h2>
         <h1 id="second-intro">00산업 최고의 제품을 만나보세요.</h1>
-        <p id="third-intro">완벽한 기술력과 서비스로 한차원 높은 품질을 지켜가겠습니다.</p>
+        <p id="third-intro">완벽한 기술력과 철저한 품질관리로 한차원 높은 제품을 만들겠습니다.</p>
     </div>
 </div>
 
 <!--베너 생성-->
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-        <div class="carousel-item active">
-            <div><h1>생활</h1></div>
+        <div class="carousel-item active" style="background-image: url('img/banner_2.jpg');background-size: 100% 100%; height: 120%;">
+            <div><h1>생활/위생 포장</h1></div>
             <div class="scroll">
                 <img src="img/life.png">
             </div>
         </div>
-        <div class="carousel-item">
-            <div><h1>식품</h1></div>
+        <div class="carousel-item" style="background-image: url('img/banner_2.jpg');background-size: 100% 100%; height: 120%;">
+            <div><h1>식품/위생 포장</h1></div>
             <div class="scroll">
                 <img src="img/food.png">
             </div>
