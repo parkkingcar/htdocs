@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>온라인 문의</title>
 </head>
-
+<body>
 <?php include 'Menu.php'; ?>
 
 <?php
@@ -15,7 +15,7 @@ $list = array();
 $menu->printSide($list);
 ?>
 
-
+</body>
 
 
 

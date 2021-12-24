@@ -12,6 +12,12 @@ a {
     text-decoration: none;
     color:#333;
 }
+
+body{
+    margin-top: 100px;
+    z-index: 2;
+}
+
 /* 글자크기를 16px 맑은 고딕 굵게하고 width넓이 700, 높이 50만큼 배경색은 #ccc, 글자색은 검정색, 라인높이50px
 menu박스 가운데정렬, 글자가운데 정렬 */
 #menu {
@@ -23,6 +29,11 @@ menu박스 가운데정렬, 글자가운데 정렬 */
     line-height: 94px;
     margin:0 auto;
     text-align: center;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 #item{
@@ -103,6 +114,7 @@ menu박스 가운데정렬, 글자가운데 정렬 */
 .sideMenu{
     width: 30%;
     float: left;
+
 }
 
 
@@ -135,6 +147,8 @@ menu박스 가운데정렬, 글자가운데 정렬 */
     width: 31%;
     height: 400px;
     float: left;
+    position: fixed;
+    z-index: 1;
 }
 
 .menuContent{
