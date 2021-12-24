@@ -4,31 +4,23 @@ class MakeDB
 {
     private $servername = 'localhost';
     private $username = 'root';
-    private $password = '';
+    private $password = 'rozenthal7';
+    private $dbname = "Mydb";
 
     public function setDB(){
-        $conn = new mysqli($this->servername, $this->username, $this->password);
+        $conn = new mysqli($this->servername, $this->username, $this->password, $this->dbname);
 
-        $sql = "Create TABLE AdminLogin(
-    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    email VARCHAR(40),
+        $f = "CREATE TABLE file(
+    id INT(50) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    guest INT(50),
+    file VARCHAR(40)
 )";
 
-        $content_sql ="Create TABLE Content(
-    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(10) NOT NULL,
-    email VARCHAR(15) NOT NULL,
-)";
+        if($conn->query($f) === TRUE) echo "true file";
+        else echo "false because " . $conn->error;
 
-        $file_sql = "Create TABLE File(
-    FileId int NOT NULL PRIMARY KEY,
-    FileAddress VARCHAR(100) NOT NULL,
-    id int,
-    FOREIGN KEY(id) REFERENCES Content(id) on CASCADE,
-)";
-        $conn->query($sql);
-        $conn->query($content_sql);
-        $conn->query($file_sql);
+
+
     }
 
 

@@ -173,6 +173,13 @@ menu박스 가운데정렬, 글자가운데 정렬 */
     margin-top: 40px;
 }
 
+.company{
+    height: 80px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
 @media screen and (max-width:700px){
     #small-menu{display: block; float: right;}
     .icon{display: block;}

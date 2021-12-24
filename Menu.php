@@ -12,6 +12,7 @@
 <?php class Menu{
     public function printMenu(){ ?>
 <div id="menu">
+    <a href="index.php"><img src="img/conpany2.jpg" class="company"></a>
     <div id="small-menu">
         <div class="icon"></div>
         <div class="icon"></div>
@@ -86,7 +87,7 @@
 <?php    }
 
     public function printMenuAn($name){
-        $this->printMenu(); ?>
+        ?>
         <div id="menuBottom">
             <div class="circle">
                 <p id="introMenu"><?=$name?></p>
