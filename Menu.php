@@ -32,7 +32,7 @@
                     <li><a href="#">생활/위생</a></li>
                 </ul>
             </li>
-            <li><a href="#">온라인문의</a></li>
+            <li><a href="question.php">온라인문의</a></li>
         </ul>
     </div>
 </div>
@@ -52,11 +52,10 @@
                 <li><a href="#">생활/위생</a></li>
             </ul>
         </li>
-        <li style="font-size:120%;"><a href="#">온라인문의</a></li>
+        <li style="font-size:120%;"><a href="question.php">온라인문의</a></li>
     </ul>
 </div>
     <?php }
-
     public function printFooter(){ ?>
 <footer>
     <div id="footer-first">
@@ -66,6 +65,33 @@
         <p>copyright 2021 00산업|All right Reserved|<a href="#">관리자로그인</a></p>
     </div>
 </footer>
+    <?php }
+
+    public function printSide($arr){
+        ?>
+            <div class="sideMenu">
+                <div class="menuContent">
+                    <ul id="sideBar">
+                        <?php
+                        foreach($arr as $value){ ?>
+                            <li class="sideBarContent"><?=$value?></li>
+                        <?php } ?>
+                    </ul>
+                    <div class="sideImg">
+                        <img src="./img/tel.png" style="border:solid 2px gray;">
+                    </div>
+                </div>
+            </div>
+
+<?php    }
+
+    public function printMenuAn($name){
+        $this->printMenu(); ?>
+        <div id="menuBottom">
+            <div class="circle">
+                <p id="introMenu"><?=$name?></p>
+            </div>
+        </div>
     <?php }
 } ?>
 

@@ -100,12 +100,70 @@ menu박스 가운데정렬, 글자가운데 정렬 */
 
 #intro-drop, #product-drop{ display: none;}
 
+.sideMenu{
+    width: 30%;
+    float: left;
+}
 
+
+#menuBottom{
+    width: 100%;
+    height: 170px;
+    background-image: url("banner_2.jpg");
+    background-repeat: no-repeat;
+}
+.circle{
+    width: 300px;
+    height: 170px;
+    background-color: whitesmoke;
+    opacity: 70%;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    margin-left: -90px;
+    text-align: center;
+}
+
+#introMenu{
+    margin-top: 62px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.sideMenu{
+    width: 31%;
+    height: 400px;
+    float: left;
+}
+
+.menuContent{
+    height: 400px;
+    width: 55%;
+    float: right;
+}
+
+#sideBar{
+    margin-top: 30px;
+}
+
+.sideBarContent{
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-family: Arial;
+}
+
+.sideImg{
+    margin-top: 40px;
+}
 
 @media screen and (max-width:700px){
     #small-menu{display: block; float: right;}
     .icon{display: block;}
     #item{display: none;}
     #item2{display: none;}
+    .sideMenu{display: none;}
 }
 
