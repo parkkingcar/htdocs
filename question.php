@@ -21,12 +21,13 @@ $list = array();
 <?php $menu->printSide($list); ?>
 
 <script src="./js/question.js" type="text/javascript"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <div class="right">
     <div style="width: 100%; height: 60px;">
         <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="selectCnt">
-            <option value="1">5</option>
-            <option value="2">10</option>
-            <option value="3">15</option>
+            <option value="5" selected>5</option>
+            <option value="10" >10</option>
+            <option value="15">15</option>
         </select>
     </div>
     <table class="table">

@@ -4,7 +4,7 @@ class LoadDB
 {
     private $servername = 'localhost';
     private $username = 'root';
-    private $password = 'rozenthal7';
+    private $password = '';
     private $dbname = "Mydb";
 
     public function connDB(){
