@@ -1,35 +1,16 @@
 <?php
 
-class MakeDB
+class LoadDB
 {
     private $servername = 'localhost';
     private $username = 'root';
     private $password = 'rozenthal7';
     private $dbname = "Mydb";
 
-    public function setDB(){
+    public function connDB(){
         $conn = new mysqli($this->servername, $this->username, $this->password, $this->dbname);
 
         return $conn;
     }
-
-
-    public function setLoginDB(){
-
-    }
-
-    public function setContent(){
-
-    }
-
-    public function getLoginDB(){
-
-    }
-
-    public function getContent(){
-
-    }
 }
-
-
 ?>
