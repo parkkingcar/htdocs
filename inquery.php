@@ -20,7 +20,7 @@ $list = array();
 $menu->printSide($list);
 ?>
 <div class="right">
-    <form action="CreateGuest.php" method="post" enctype="multipart/form-data">
+    <form action="Online.php" method="post" enctype="multipart/form-data">
         <div class="mb4">
             <!--이름-->
             <label for="exampleFormControlInput1" class="form-label">제목</label>
@@ -35,7 +35,7 @@ $menu->printSide($list);
             <input type="password" class="form-control" id="inputPassword" name="password">
 
             <!--파일 업로드 -->
-            <input class="form-control" type="file" id="formFile" name="file" multiple="multiple">
+            <input class="form-control" type="file" id="formFile" name="files[]" multiple="multiple">
 
             <!--문의사항-->
             <label for="exampleFormControlInput1" class="form-label">문의사항</label>
