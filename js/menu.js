@@ -8,6 +8,7 @@ function menuEvt(){
     window.onresize = bigger;
 }
 
+
 function bigger(){
     if(window.innerWidth > 700){
         document.getElementById("item2").style.display = "none";

@@ -146,7 +146,7 @@
     }
 
     .carousel-item > div > h1{
-        padding-top: 110px;
+        padding-top: 95px;
         padding-left: 40%;
         font-size: 150%;
     }
@@ -155,4 +155,6 @@
         padding-top: 80px;
         padding-left: 1%;
     }
+
+    #third-intro{display: none;}
 }

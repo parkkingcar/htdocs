@@ -39,7 +39,7 @@
 </div>
 
 <div id="item2">
-    <ul>
+    <ul style="margin-bottom:0;">
         <li id="intro">회사소개
             <ul id="intro-drop">
                 <li><a href="#">대표인사말</a></li>
@@ -71,7 +71,6 @@
     public function printSide($arr){
         ?>
             <div class="sideMenu">
-                <div class="menuContent">
                     <ul id="sideBar">
                         <?php
                         foreach($arr as $value){ ?>
@@ -79,9 +78,8 @@
                         <?php } ?>
                     </ul>
                     <div class="sideImg">
-                        <img src="./img/tel.png" style="border:solid 2px gray;">
+                        <img src="./img/tel.png" style="border:solid 2px gray;" id="tel">
                     </div>
-                </div>
             </div>
 
 <?php    }

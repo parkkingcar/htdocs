@@ -10,17 +10,7 @@ class MakeDB
     public function setDB(){
         $conn = new mysqli($this->servername, $this->username, $this->password, $this->dbname);
 
-        $f = "CREATE TABLE file(
-    id INT(50) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    guest INT(50),
-    file VARCHAR(40)
-)";
-
-        if($conn->query($f) === TRUE) echo "true file";
-        else echo "false because " . $conn->error;
-
-
-
+        return $conn;
     }
 
 
@@ -41,7 +31,5 @@ class MakeDB
     }
 }
 
-$a = new MakeDB();
-$a->setDB();
 
 ?>
