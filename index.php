@@ -55,7 +55,7 @@ $menu->printMenu();
 <div class="question">
     <div id="question-first"><h2>주문 문의</h2></div>
     <div id="question-second"><p>궁금하신점이 있으시면 문의주세요! 친절하게 상담해드리겠습니다.</p></div>
-    <div id="question-third"><p>전화: 010-3299-5862</p><a href="question.php">온라인 문의 ↗</a></div>
+    <div id="question-third"><p>전화: 010-3299-5862</p><a href="index.php">온라인 문의 ↗</a></div>
 
 </div>
 

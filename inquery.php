@@ -12,19 +12,25 @@
 
 <?php
 include "Menu.php";
+
 $menu = new Menu();
 
 $menu->printMenu();
 $menu->printMenuAn("온라인문의");
-$list = array();
+$list = array("글 확인");
+if(!isset($_SESSION)) array_push($list, '로그아웃');
 $menu->printSide($list);
 ?>
 <div class="right">
     <form action="Online.php" method="post" enctype="multipart/form-data">
         <div class="mb4">
-            <!--이름-->
+            <!--제목-->
             <label for="exampleFormControlInput1" class="form-label">제목</label>
             <input type="input" class="form-control" id="exampleFormControlInput1" name="title">
+
+            <!--문의자 -->
+            <label for="exampleFormControlInput1" class="form-label">문의자</label>
+            <input type="input" class="form-control" id="exampleFormControlInput1" name="name">
 
             <!--이메일-->
             <label for="exampleFormControlInput1" class="form-label">이메일</label>
@@ -40,7 +46,9 @@ $menu->printSide($list);
             <!--문의사항-->
             <label for="exampleFormControlInput1" class="form-label">문의사항</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" cols="30" rows="10" name="content"></textarea>
-            <button type="submit" class="btn btn-light write mar">저장</button>
+            <div>
+                <button type="submit" class="btn btn-light write mar" style="float:right;">저장</button>
+            </div>
         </div>
     </form>
 </div>

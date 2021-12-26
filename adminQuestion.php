@@ -27,7 +27,13 @@ $conn = $db->connDB();
 $select = "SELECT * FROM guest";
 $result = $conn->query($select);
 
-if(isset($_COOKIE['guest'])){
+
+$isAdmin = FALSE;
+if(isset($_SESSION['admin'])){
+    $content = "SELECT * FROM `guest`";
+    $isAdmin = TRUE;
+}
+else if(isset($_COOKIE['guest'])){
     $guest = $_COOKIE['guest'];
     $password = $_COOKIE['password'];
     $content = "SELECT * FROM `guest` WHERE `email` LIKE '" .$guest ."' AND `password` LIKE '" .$password ."'";
@@ -79,53 +85,63 @@ $_SESSION['db'] = $rowContent;
             <option value="15">15</option>
         </select>
     </div>
-    <table class="table">
-        <thead>
-        <tr>
-            <th scop="col" style="width:7%;">#</th>
-            <th scop="col" style="width:55%;">제목</th>
-            <th scop="col" style="width:18%;">작성일</th>
-            <th scop="col" style="width:10%;">조회</th>
-        </tr>
-        </thead>
-        <tbody id="content">
-        <!--db 내용 붙이기-->
-        <?php for($i = 1; $i <= $row; $i++){?>
-            <tr id="contentSize">
-                <th scop="row" class="deleteConfirm"><?=$i?></th>
-                <th scop="row"><a href="correctInquery.php?id=<?=$i-1?>"><?=$rowContent[$i-1][1] ?></a></th>
-                <th scop="row"><?=$rowContent[$i-1][5] ?></th>
-                <th scop="row"><?=$rowContent[$i-1][7] ?></th>
-                <th scop="row">   </th>
-
+    <form method="post" action="deleteRow.php">
+        <table class="table">
+            <thead>
+            <tr>
+                <th scop="col" style="width:7%;">#</th>
+                <th scop="col" style="width:55%;">제목</th>
+                <th scop="col" style="width:18%;">작성일</th>
+                <th scop="col" style="width:10%;">조회</th>
             </tr>
-        <?php }?>
-        </tbody>
-    </table>
+            </thead>
+            <tbody id="content">
+            <!--db 내용 붙이기-->
+            <?php for($i = 1; $i <= $row; $i++){?>
+                <tr id="contentSize">
+                    <th scop="row" class="deleteConfirm">
+                        <input class="form-check-input" type="checkbox"  id="flexCheckDefault" name="del[]" value=<?=$rowContent[$i-1][0]?>>
+                        <span class="del"><?=$i?></span>
+                    </th>
+                    <th scop="row"><a href="correctInquery.php?id=<?=$i-1?>"><?=$rowContent[$i-1][1] ?></a></th>
+                    <th scop="row"><?=$rowContent[$i-1][5] ?></th>
+                    <th scop="row"><?=$rowContent[$i-1][7] ?></th>
+                    <th scop="row">   </th>
 
-    <div class="confirm">
-        <button type="button" class="btn btn-light write" style="float:right;"><a href="logout.php">로그아웃</a></button>
-    </div>
+                </tr>
+            <?php }?>
+            </tbody>
+        </table>
+        <div class="confirm">
+            <button type="button" class="btn btn-light write" style="float:right;"><a href="logout.php">로그아웃</a></button>
+        </div>
 
-    <nav aria-label="Page navigation example">
-        <ul class="pagination">
-            <li class="page-item">
-                <a class="page-link" href="#" aria-label="Previous" id="previous"">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous" id="previous"">
                     <span aria-hidden="true">&laquo;</span>
-                </a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#" id="firstPage">1</a></li>
-            <li class="page-item"><a class="page-link" href="#" id="secondPage">2</a></li>
-            <li class="page-item"><a class="page-link" href="#" id="thirdPage">3</a></li>
-            <li class="page-item">
-                <a class="page-link" href="#" aria-label="Next" id="next">
-                    <span aria-hidden="true">&raquo;</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#" id="firstPage">1</a></li>
+                <li class="page-item"><a class="page-link" href="#" id="secondPage">2</a></li>
+                <li class="page-item"><a class="page-link" href="#" id="thirdPage">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next" id="next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
 
+        <div style="height:10px;"></div>
+        <?php if($isAdmin){ ?>
+            <button type="button" class="btn btn-light write" id="delete">삭제</button type="button">
+        <?php }?>
 </div>
+    </form>
+
+
 
 <div>
 </div>

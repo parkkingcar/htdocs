@@ -1,26 +1,26 @@
 .right{
     float: right;
-    width: 40%;
-    border: 1px solid black;
-    margin-right: 25%;
+    width: 45%;
+
+    margin-right: 250px;
     margin-top: 33px;
     z-index: 2;
 }
 
 .write{
-    float: right;
+    float: left;
 }
 
 .table{
     border-top: 1px solid black;
 }
 
-#numCnt{
+.numCnt{
     width: 20%;
     text-align: center;
 }
 
-#contentCnt{
+.contentCnt{
     padding-left: 25%;
 }
 
@@ -39,22 +39,47 @@
 }
 
 .foot{
-    padding-top: 800px;
+    padding-top: 1000px;
     width: 100%;
     height: 50px;
 }
 
+.pagination{
+    margin-left: 35%;
+}
+
+.confirm{
+    width:100%;
+    height: 45px;
+    display: none;
+}
+
+
+#contentSize > th{
+    font-size: 15px;
+}
+
+#fileUpload{display: none;}
+
+#delete{float: right;}
+
+
+.form-check-input{display: none;}
+
 @media screen and (max-width:1200px){
     .right{
-        margin-right: 0;
+        margin-right: 5%;
     }
 }
 
-@media screen and (max-width:750px){
+@media screen and (max-width:870px){
     .right{
         margin-left: 3%;
         margin-right: 3%;
         float: left;
         width: 94%;
+    }
+    .confirm{
+        display: block;
     }
 }

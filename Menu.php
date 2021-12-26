@@ -33,7 +33,7 @@
                     <li><a href="#">생활/위생</a></li>
                 </ul>
             </li>
-            <li><a href="question.php">온라인문의</a></li>
+            <li><a href="inquery.php">온라인문의</a></li>
         </ul>
     </div>
 </div>
@@ -53,7 +53,8 @@
                 <li><a href="#">생활/위생</a></li>
             </ul>
         </li>
-        <li style="font-size:120%;"><a href="question.php">온라인문의</a></li>
+        <li style="font-size:120%;"><a href="inquery.php">온라인문의</a></li>
+        <li style="font-size:120%;"><a href="guestLogin.php">문의글 확인</a></li>
     </ul>
 </div>
     <?php }
@@ -73,8 +74,18 @@
             <div class="sideMenu">
                     <ul id="sideBar">
                         <?php
-                        foreach($arr as $value){ ?>
-                            <li class="sideBarContent"><?=$value?></li>
+                        foreach($arr as $value){
+                            $link = 'index.php';
+                            if($value == "글 확인"){
+                                $link = 'guestLogin.php';
+                                ?>
+                                <li class="sideBarContent"><a href=<?=$link?>><?=$value?></a></li>
+                            <?php }?>
+                            <?php if($value == "로그아웃"){
+                                $link = 'logout.php';
+                                ?>
+                                <li class="sideBarContent" id="logout"><a href=<?=$link?>><?=$value?></a></li>
+                                <?php }?>
                         <?php } ?>
                     </ul>
                     <div class="sideImg">

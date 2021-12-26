@@ -102,14 +102,14 @@ menu박스 가운데정렬, 글자가운데 정렬 */
 
 }
 
-#intro, #product{
+#intro, #product, #online{
     width: 100%;
     font-size: 120%;
     border-bottom: 1px solid black;
 }
 
 
-#intro-drop, #product-drop{ display: none;}
+#intro-drop, #product-drop, #online-drop{ display: none;}
 
 .sideMenu{
     width: 30%;
@@ -153,7 +153,6 @@ menu박스 가운데정렬, 글자가운데 정렬 */
     width: 22%;
     height: 400px;
     float: left;
-    position: fixed;
     z-index: 5;
     margin-left: 10%;
 }
@@ -184,7 +183,7 @@ menu박스 가운데정렬, 글자가운데 정렬 */
     margin-top: 10px;
 }
 
-@media screen and (max-width:750px){
+@media screen and (max-width:870px){
     #small-menu{display: block; float: right;}
     .icon{display: block;}
     #item{display: none;}
