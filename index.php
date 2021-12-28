@@ -29,13 +29,13 @@ $menu->printMenu();
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active" style="background-image: url('img/banner_2.jpg');background-size: 100% 100%; height: 120%;">
-            <div><h1>생활/위생 포장</h1></div>
+            <div><h1><a href="lifeProduct.php">생활/위생 포장</a></h1></div>
             <div class="scroll">
                 <img src="img/life.png">
             </div>
         </div>
         <div class="carousel-item" style="background-image: url('img/banner_2.jpg');background-size: 100% 100%; height: 120%;">
-            <div><h1>식품/위생 포장</h1></div>
+            <div><h1><a href="foodproduct.php">식품 포장</a></h1></div>
             <div class="scroll">
                 <img src="img/food.png">
             </div>
@@ -55,7 +55,7 @@ $menu->printMenu();
 <div class="question">
     <div id="question-first"><h2>주문 문의</h2></div>
     <div id="question-second"><p>궁금하신점이 있으시면 문의주세요! 친절하게 상담해드리겠습니다.</p></div>
-    <div id="question-third"><p>전화: 010-3299-5862</p><a href="index.php">온라인 문의 ↗</a></div>
+    <div id="question-third"><p>전화: 010-3299-5862</p><a href="inquery.php">온라인 문의 ↗</a></div>
 
 </div>
 

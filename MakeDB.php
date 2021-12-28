@@ -13,4 +13,20 @@ class LoadDB
         return $conn;
     }
 }
+
+class IntroContent{
+    private $introContent;
+
+
+    public function setIntroContent($content){
+        $this->introContent = $content;
+    }
+
+    public function getIntroContent(){
+        return $this->introContent;
+    }
+
+}
+
+
 ?>

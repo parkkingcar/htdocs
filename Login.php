@@ -13,7 +13,6 @@ $sql = "SELECT * FROM `guest` WHERE `email` LIKE '" .$email ."' AND " ."`passwor
 $login = $conn->query($sql);
 
 $row = $login->fetch_assoc();
-
 if(!isset($row)){
     echo "<script> alert('정보가 없습니다.');</script>";
     echo "<script> window.location.href='inquery.php';</script>";

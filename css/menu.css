@@ -4,6 +4,8 @@
     padding: 0;
 }
 /* ul li태그에 리스트 스타일을 없앰 */
+
+
 ul li{
     list-style: none;
 }
@@ -26,6 +28,7 @@ menu박스 가운데정렬, 글자가운데 정렬 */
     height:100px;
     background: whitesmoke;
     color:black;
+    color:black;
     line-height: 94px;
     margin:0 auto;
     text-align: center;
@@ -39,8 +42,15 @@ menu박스 가운데정렬, 글자가운데 정렬 */
 #item{
     float: right;
     margin-right: 3%;
+
 }
 
+#submenu{
+    position: fixed;
+    background-color: whitesmoke;
+    width: 100%;
+    z-index: 1;
+}
 
 /* menu태그 자식의 ul의 자식 li를 왼쪽정렬과 넓이 140설정 */
 #item > ul > li {
@@ -101,6 +111,8 @@ menu박스 가운데정렬, 글자가운데 정렬 */
     background-color: whitesmoke;
 
 }
+
+
 
 #intro, #product, #online{
     width: 100%;
