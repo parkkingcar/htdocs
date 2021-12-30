@@ -39,10 +39,16 @@ $menu->printSide($arr);
         <div style="width:10px;height:10px;"></div>
         <div>
             <button type="submit" class="btn btn-primary" style="float: right;">로그인</button>
-            <div style="float:right; margin-right:2%;">로그인 유지<input class="form-check-input" type="checkbox" value="true" name="cookie" id="flexCheckDefault"></div>
+            <div style="float:right; margin-right:2%;">로그인 유지<input  type="checkbox" value="true" name="cookie" id="flexCheckDefault"></div>
         </div>
     </form>
 </div>
+
+<div class="foot"></div>
+<?php
+$menu->printFooter();
+
+?>
 
 </body>
 </html>

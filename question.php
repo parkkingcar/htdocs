@@ -83,18 +83,20 @@ $_SESSION['db'] = $rowContent;
         <thead>
         <tr>
             <th scop="col" style="width:7%;">#</th>
-            <th scop="col" style="width:55%;">제목</th>
+            <th scop="col" style="width:48%;">제목</th>
             <th scop="col" style="width:18%;">작성일</th>
-            <th scop="col" style="width:10%;">조회</th>
+            <th scop="col" style="width:12%;">조회</th>
         </tr>
         </thead>
         <tbody id="content">
         <!--db 내용 붙이기-->
-        <?php for($i = 1; $i <= $row; $i++){?>
+        <?php for($i = 1; $i <= $row; $i++){
+            $day = substr($rowContent[$i-1][5], 5, 5);
+            ?>
             <tr id="contentSize">
                 <th scop="row" class="deleteConfirm"><?=$i?></th>
                 <th scop="row"><a href="correctInquery.php?id=<?=$i-1?>"><?=$rowContent[$i-1][1] ?></a></th>
-                <th scop="row"><?=$rowContent[$i-1][5] ?></th>
+                <th scop="row" id="day"><?=$day ?></th>
                 <th scop="row"><?=$rowContent[$i-1][7] ?></th>
                 <th scop="row">   </th>
 
@@ -126,7 +128,7 @@ $_SESSION['db'] = $rowContent;
     </nav>
 
 </div>
-
+<div id="delete"></div>
 <div>
 </div>
 <div class="foot"></div>

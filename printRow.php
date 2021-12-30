@@ -12,6 +12,7 @@ $tmp = $dbrow - ($page * $row);
 if($tmp < 0) $last = $first + $dbrow % $row - 1;
 
 for($i = $first; $i <= $last; $i++){
+    $day = substr($db[$i - 1][5], 5, 5);
     echo "<tr>";
     echo "<th scop='row' class='deleteConfirm'>"
         ."<input class='form-check-input' type='checkbox' id='flexCheckDefault' name='del' value="
@@ -20,8 +21,8 @@ for($i = $first; $i <= $last; $i++){
         .$i
         ."</a></th>";
 
-    echo "<th scop='row'><a href='correctInquery.php?id=<?=$i-1?>'>".($db[$i - 1][1])."</a></th>";
-    echo "<th scop='row'>".($db[$i - 1][5])."</th>";
+    echo "<th scop='row'><a href='correctInquery.php?id='<?=$i-1?>>".($db[$i - 1][1])."</a></th>";
+    echo "<th scop='row'>".($day)."</th>";
     echo "<th scop='row'>".($db[$i - 1][7])."</th>";
     echo "</tr>";
 }

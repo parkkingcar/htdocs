@@ -1,7 +1,6 @@
 .right{
     float: right;
     width: 45%;
-
     margin-right: 250px;
     margin-top: 33px;
     z-index: 2;
@@ -66,6 +65,38 @@
 
 .form-check-input{display: none;}
 
+
+#adminloginPage{
+    width: 500px;
+    height: 500px;
+    margin-left: 30%;
+    margin-top: 10%;
+}
+
+#adminlogo{
+    width: 100%;
+    height: 200px;
+}
+
+#map{
+    width: 100%;
+    height: 400px;
+}
+
+.introProduct{
+    
+    width: 100%;
+    background-color: whitesmoke;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+.productext{
+    padding-left: 5%;
+}
+
+
+
 @media screen and (max-width:1200px){
     .right{
         margin-right: 5%;
@@ -82,4 +113,5 @@
     .confirm{
         display: block;
     }
+
 }

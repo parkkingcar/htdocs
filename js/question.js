@@ -63,16 +63,15 @@ function deler(){
 function pageChange(){
     let del = document.getElementById('delete');
     if(del.innerHTML == "확인"){
-        for(let i = 0; i < check.length; i++){
-            check[i].style.display = "none";
-        }
+        let check = document.getElementsByClassName('form-check-input');
+        for(let i = 0; i < check.length; i++) check[i].style.display = "none";
 
-        let num = document.getElementsByClassName("del");
-        for(let i = 0; i < num.length; i++){
-            num[i].style.display = "block";
-        }
+        let num = document.getElementsByClassName('del');
+        for(let i = 0; i < num.length; i++) num[i].style.display = "block";
+
         del.innerHTML = "삭제";
     }
+
 
     let db_row = document.getElementById('rowcnt').innerHTML;
     let rowcnt = document.getElementById('selectCnt').value;
@@ -91,14 +90,12 @@ function pageChange(){
 function changeRow(){
     let del = document.getElementById('delete');
     if(del.innerHTML == "확인"){
-        for(let i = 0; i < check.length; i++){
-            check[i].style.display = "none";
-        }
+        let check = document.getElementsByClassName('form-check-input');
+        for(let i = 0; i < check.length; i++) check[i].style.display = "none";
 
-        let num = document.getElementsByClassName("del");
-        for(let i = 0; i < num.length; i++){
-            num[i].style.display = "block";
-        }
+        let num = document.getElementsByClassName('del');
+        for(let i = 0; i < num.length; i++) num[i].style.display = "block";
+
         del.innerHTML = "삭제";
     }
 
